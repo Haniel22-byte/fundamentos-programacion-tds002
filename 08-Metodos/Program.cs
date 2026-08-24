@@ -16,13 +16,6 @@ class Program
         {
             Console.WriteLine("Elemento en posición " + i + ": " + numeros[i]);
         }
-
-        // Arreglo de cadenas
-        string[] nombres = { "Haniel", "Carlos", "Ana" };
-        Console.WriteLine("\nLista de nombres:");
-        foreach (string nombre in nombres)
-        {
-            Console.WriteLine(nombre);
-        }
     }
 }
+
