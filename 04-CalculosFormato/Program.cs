@@ -8,6 +8,8 @@ class Program
         double cantidad = 3;
         double total = precio * cantidad;
 
-        Console.WriteLine("El total es: " + total);
+        Console.WriteLine("Precio: {0:C}", precio);
+        Console.WriteLine("Cantidad: {0}", cantidad);
+        Console.WriteLine("Total: {0:C}", total);
     }
 }
