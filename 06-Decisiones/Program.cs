@@ -27,5 +27,20 @@ class Program
         {
             Console.WriteLine("Mejor espera un poco.");
         }
+
+        int nota = 85;
+
+        if (nota >= 90)
+        {
+            Console.WriteLine("Excelente");
+        }
+        else if (nota >= 70)
+        {
+            Console.WriteLine("Aprobado");
+        }
+        else
+        {
+            Console.WriteLine("Reprobado");
+        }
     }
 }
