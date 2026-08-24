@@ -6,6 +6,9 @@ class Program
     {
         MostrarMensaje();
         MostrarSuma(5, 7);
+
+        int resultado = Multiplicar(4, 3);
+        Console.WriteLine("La multiplicación es: " + resultado);
     }
 
     static void MostrarMensaje()
@@ -17,5 +20,10 @@ class Program
     {
         int resultado = a + b;
         Console.WriteLine("La suma es: " + resultado);
+    }
+
+    static int Multiplicar(int x, int y)
+    {
+        return x * y;
     }
 }
