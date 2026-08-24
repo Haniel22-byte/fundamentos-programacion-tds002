@@ -10,13 +10,22 @@ class Program
             Console.WriteLine("Número: " + i);
         }
 
-        // Ciclo while: cuenta hacia atrás
+        // Ciclo while
         int j = 5;
         while (j > 0)
         {
             Console.WriteLine("Cuenta regresiva: " + j);
             j--;
         }
+
+        // Ciclo do-while: se ejecuta al menos una vez
+        int k = 0;
+        do
+        {
+            Console.WriteLine("Iteración do-while: " + k);
+            k++;
+        } while (k < 3);
     }
 }
+
 
