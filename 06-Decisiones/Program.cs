@@ -15,5 +15,17 @@ class Program
         {
             Console.WriteLine("No puedes conducir.");
         }
+
+        bool llueve = false;
+        bool tengoParaguas = true;
+
+        if (llueve || tengoParaguas)
+        {
+            Console.WriteLine("Puedes salir sin problema.");
+        }
+        else
+        {
+            Console.WriteLine("Mejor espera un poco.");
+        }
     }
 }
