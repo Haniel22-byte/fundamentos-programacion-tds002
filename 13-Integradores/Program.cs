@@ -23,7 +23,14 @@ class Program
         Console.Write("Cantidad: ");
         int cantidad = int.Parse(Console.ReadLine());
 
-        double total = precios[opcion - 1] * cantidad;
+        double total = CalcularTotal(precios[opcion - 1], cantidad);
+
         Console.WriteLine($"\nHas comprado {cantidad} {productos[opcion - 1]} por un total de RD${total}");
+        Console.WriteLine("\nGracias por tu compra, " + cliente + "!");
+    }
+
+    static double CalcularTotal(double precio, int cantidad)
+    {
+        return precio * cantidad;
     }
 }
