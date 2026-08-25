@@ -13,5 +13,13 @@ class Program
 
         Console.WriteLine("Primer número: " + numeros[0]);
         Console.WriteLine("Cantidad de elementos: " + numeros.Count);
+
+        // Recorrido con foreach
+        Console.WriteLine("\nRecorriendo la lista:");
+        foreach (int n in numeros)
+        {
+            Console.WriteLine(n);
+        }
     }
 }
+
