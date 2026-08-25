@@ -6,20 +6,23 @@ class Program
     static void Main(string[] args)
     {
         // Lista de enteros
-        List<int> numeros = new List<int>();
-        numeros.Add(10);
-        numeros.Add(20);
-        numeros.Add(30);
+        List<int> numeros = new List<int>() { 10, 20, 30 };
 
         Console.WriteLine("Primer número: " + numeros[0]);
         Console.WriteLine("Cantidad de elementos: " + numeros.Count);
 
-        // Recorrido con foreach
         Console.WriteLine("\nRecorriendo la lista:");
         foreach (int n in numeros)
         {
             Console.WriteLine(n);
         }
+
+        // Lista de cadenas
+        List<string> nombres = new List<string>() { "Haniel", "Carlos", "Ana" };
+        Console.WriteLine("\nLista de nombres:");
+        foreach (string nombre in nombres)
+        {
+            Console.WriteLine(nombre);
+        }
     }
 }
-
