@@ -7,7 +7,6 @@ class Program
     {
         Console.WriteLine("=== Sistema de Ventas ===");
 
-        // Variables
         string cliente = "Haniel";
         List<string> productos = new List<string>() { "Mouse", "Teclado", "Monitor" };
         List<double> precios = new List<double>() { 500.00, 1200.00, 4500.00 };
@@ -18,5 +17,13 @@ class Program
         {
             Console.WriteLine($"{i + 1}. {productos[i]} - RD${precios[i]}");
         }
+
+        Console.Write("\nElige un producto (1-3): ");
+        int opcion = int.Parse(Console.ReadLine());
+        Console.Write("Cantidad: ");
+        int cantidad = int.Parse(Console.ReadLine());
+
+        double total = precios[opcion - 1] * cantidad;
+        Console.WriteLine($"\nHas comprado {cantidad} {productos[opcion - 1]} por un total de RD${total}");
     }
 }
