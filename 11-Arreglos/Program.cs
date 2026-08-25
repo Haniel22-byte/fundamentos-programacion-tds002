@@ -11,6 +11,12 @@ class Persona
         Nombre = nombre;
         Edad = edad;
     }
+
+    // Método
+    public void Saludar()
+    {
+        Console.WriteLine("Hola, soy " + Nombre + " y tengo " + Edad + " años.");
+    }
 }
 
 class Program
@@ -18,8 +24,6 @@ class Program
     static void Main(string[] args)
     {
         Persona p1 = new Persona("Haniel", 20);
-
-        Console.WriteLine("Nombre: " + p1.Nombre);
-        Console.WriteLine("Edad: " + p1.Edad);
+        p1.Saludar();
     }
 }
