@@ -1,31 +1,17 @@
 ﻿using System;
-
-class Persona
-{
-    public string Nombre;
-    public int Edad;
-
-    public void Saludar()
-    {
-        Console.WriteLine("Hola, soy " + Nombre);
-    }
-}
-
-class Estudiante : Persona
-{
-    public string Carrera;
-}
+using System.Collections.Generic;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Estudiante e1 = new Estudiante();
-        e1.Nombre = "Haniel";
-        e1.Edad = 20;
-        e1.Carrera = "Informática";
+        // Lista de enteros
+        List<int> numeros = new List<int>();
+        numeros.Add(10);
+        numeros.Add(20);
+        numeros.Add(30);
 
-        e1.Saludar();
-        Console.WriteLine("Carrera: " + e1.Carrera);
+        Console.WriteLine("Primer número: " + numeros[0]);
+        Console.WriteLine("Cantidad de elementos: " + numeros.Count);
     }
 }
